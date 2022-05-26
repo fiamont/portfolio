@@ -1,5 +1,5 @@
 import style from "../styles/About.module.css";
-import Me from "../public/sofia.jpg";
+import Me from "../public/me.jpg";
 import Image from "next/image";
 
 const About = () => {
