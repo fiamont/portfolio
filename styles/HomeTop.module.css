@@ -1,0 +1,25 @@
+.Home {
+  background: rgb(180, 230, 225);
+  background: linear-gradient(0deg, rgb(13, 51, 81) 0%, rgb(45, 253, 184) 100%);
+  height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Text {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.Icons svg path {
+  cursor: pointer;
+}

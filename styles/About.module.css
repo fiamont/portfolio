@@ -1,0 +1,48 @@
+.AboutMe {
+  padding-bottom: 5%;
+}
+
+.AboutMe .Container .Photo .Me {
+  height: 70%;
+  max-height: 370px;
+  border-radius: 3%;
+  box-shadow: 6px -1px 21px 0px #5e5e5e;
+}
+.AboutMe .Container .Photo {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.AboutMe .Container .Text {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.AboutMe .Container .Text p {
+  padding-left: 3%;
+}
+
+.AboutMe .Container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .AboutMe .Container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .AboutMe .Container .Text {
+    width: 100%;
+  }
+
+  .AboutMe .Container .Text p {
+    padding-left: 0;
+  }
+}
