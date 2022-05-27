@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.rubrik,
+.text {
+  padding: 1rem;
+  margin: 0;
+}
+
+.text {
+  padding-top: 0;
+}
+
+.Unify,
+.Memory {
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.LinkMemory,
+.LinkUnify {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 225px;
+  height: 142px;
+  background-color: rgb(67, 200, 151);
+  border-radius: 10px;
+}
+
+.LinkUnify {
+  height: 175px;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    flex-direction: column;
+  }
+}

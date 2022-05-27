@@ -16,6 +16,10 @@ const Skills = () => {
             <li key="sql">SQL</li>
             <li key="html">HTML</li>
             <li key="css">CSS</li>
+          </ul>
+        </div>
+        <div className={style.List}>
+          <ul>
             <li key="git">GIT</li>
             <li key="agile">AGILE</li>
             <li key="react">REACT</li>
@@ -25,7 +29,7 @@ const Skills = () => {
         <Image
           className={style.Codegirl}
           src={Codegirl}
-          alt="dual"
+          alt="codegirl"
           width={200}
           height={200}
         />
