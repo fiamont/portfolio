@@ -1,0 +1,43 @@
+.rubrik {
+  text-align: center;
+}
+
+.Link {
+  text-decoration: none;
+  padding-right: 6px;
+  color: #a8409d;
+}
+
+.form {
+  padding: 1rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.label {
+  font-size: 30px;
+  color: rgb(78, 124, 193);
+  padding: 1rem;
+}
+
+.input,
+.textarea {
+  width: 80%;
+  height: 2rem;
+  border-radius: 7px;
+  border: none;
+  background-color: rgb(212, 212, 212);
+}
+
+.textarea {
+  height: 10rem;
+}
+
+@media screen and (min-width: 830px) {
+  .input {
+    width: 620px;
+  }
+}
