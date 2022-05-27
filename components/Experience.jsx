@@ -6,7 +6,6 @@ const listTitleStyle = {
   fontWeight: 900,
   fontFamily: "var(--fontfamily-alternative)",
   marginBottom: "4px",
-  color: "#a8409d",
   listStyleType: "none",
   fontSize: "22px",
 };

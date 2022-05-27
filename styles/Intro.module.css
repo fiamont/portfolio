@@ -1,8 +1,21 @@
 .Intro {
-  padding: 6rem;
+  position: relative;
+  height: 75vh;
+  background-color: rgb(25, 142, 103);
 }
 
-.TextImg {
+.IntroSquare {
+  position: absolute;
+  padding: 6rem;
+  background-color: rgb(31, 31, 31);
+  box-shadow: var(--default-boxshadow);
+  left: 1rem;
+  right: 1rem;
+  top: 1rem;
+  bottom: 1rem;
+}
+
+.Text {
   display: flex;
 }
 
@@ -24,9 +37,13 @@
 
 @media screen and (max-width: 460px) {
   .Intro {
+    height: 55vh;
+  }
+
+  .IntroSquare {
     padding: 2rem;
   }
-  .TextImg {
+  .Text {
     flex-direction: column;
     justify-content: center;
     align-items: center;
