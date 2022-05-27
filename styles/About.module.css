@@ -31,8 +31,7 @@
 }
 
 .Me {
-  border-radius: 5px;
-  box-shadow: 6px -1px 21px 0px #5e5e5e;
+  border-radius: 3px;
 }
 
 @media screen and (max-width: 500px) {
