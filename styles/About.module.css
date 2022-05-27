@@ -1,48 +1,51 @@
 .AboutMe {
-  padding-bottom: 5%;
+  padding: 2rem;
 }
 
-.AboutMe .Container .Photo .Me {
-  height: 70%;
-  max-height: 370px;
-  border-radius: 3%;
-  box-shadow: 6px -1px 21px 0px #5e5e5e;
+.part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.AboutMe .Container .Photo {
-  width: 50%;
+
+.textpart2 {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.Photo {
   display: flex;
   justify-content: center;
   align-self: center;
   align-items: center;
 }
 
-.AboutMe .Container .Text {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
+.heading,
+.heading2 {
+  text-align: center;
 }
 
-.AboutMe .Container .Text p {
-  padding-left: 3%;
+.heading2 {
+  font-size: 15px;
 }
 
-.AboutMe .Container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.Me {
+  border-radius: 5px;
+  box-shadow: 6px -1px 21px 0px #5e5e5e;
 }
 
-@media screen and (max-width: 600px) {
-  .AboutMe .Container {
-    display: flex;
+@media screen and (max-width: 500px) {
+  .part1 {
     flex-direction: column;
   }
 
-  .AboutMe .Container .Text {
+  .textpart2 {
     width: 100%;
   }
 
-  .AboutMe .Container .Text p {
-    padding-left: 0;
+  .heading,
+  .heading2 {
+    text-align: start;
   }
 }

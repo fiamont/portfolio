@@ -1,35 +1,18 @@
 .Intro {
-  padding-top: 3%;
-  padding-bottom: 5%;
+  padding: 3rem;
 }
 
-.Intro .Container .Photo .Girlcartoon {
-  height: 80%;
-  max-height: 370px;
-  border-radius: 5%;
-}
-.Intro .Container .Photo {
-  width: 50%;
+.TextImg {
   display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
 }
 
-.Intro .Container .Text {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
+.Rubrik {
+  text-transform: uppercase;
 }
 
-.Intro .Container .Text p {
-  padding-left: 3%;
-}
-
-.Intro .Container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.P {
+  width: 70%;
+  font-family: var(--fontfamily-alternative);
 }
 
 .Link {
@@ -38,17 +21,14 @@
   color: rgb(78, 124, 193);
 }
 
-@media screen and (max-width: 755px) {
-  .Intro .Container {
-    display: flex;
+@media screen and (max-width: 430px) {
+  .TextImg {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .Intro .Container .Text {
+  .P {
     width: 100%;
-  }
-
-  .Intro .Container .Text p {
-    padding-left: 0;
   }
 }

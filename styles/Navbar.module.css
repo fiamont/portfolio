@@ -33,7 +33,7 @@
 @media screen and (max-width: 430px) {
   .Navbarmenu {
     flex-direction: column;
-    padding: 0;
+    padding: 0.5rem;
     background: rgb(25, 142, 103);
   }
 
