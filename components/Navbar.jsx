@@ -1,7 +1,7 @@
 import Link from "next/link";
 import style from "../styles/Navbar.module.css";
 import React, { useState, useEffect } from "react";
-import { FaHome } from "react-icons/fa";
+import { RiHomeHeartFill } from "react-icons/ri";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -31,7 +31,7 @@ const Navbar = () => {
       <div className={style.buttons}>
         <div className={style.homeIconDesktop}>
           <Link href="/" passHref>
-            <FaHome size="40px"></FaHome>
+            <RiHomeHeartFill size="45px"></RiHomeHeartFill>
           </Link>
         </div>
         <button onClick={toggleNav} className={style.hamburger}>
@@ -44,7 +44,7 @@ const Navbar = () => {
         <ul onClick={toggleNav2} className={style.Navbarmenu}>
           <li className={style.homeIconMobile}>
             <Link href="/" passHref>
-              <FaHome size="30px"></FaHome>
+              <RiHomeHeartFill size="30px"></RiHomeHeartFill>
             </Link>
           </li>
           <li>

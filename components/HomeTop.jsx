@@ -18,20 +18,21 @@ function HomeTop() {
   return (
     <div className={style.Home} id="home">
       <div>
-        <h1 className={style.Text}>Välkommen till Sofias Portfolio</h1>
+        <p className={style.p}>portfolio.</p>
+        <h1 className={style.Text}>Sofia Montgomery</h1>
       </div>
       <div className={style.Icons}>
         <Bouncy>
           <FaGithub
-            color="#0a2a43"
-            size="50px"
+            color="#209a71"
+            size="45px"
             onClick={handleURL("https://github.com/fiamont")}
           />
         </Bouncy>
         <Bouncy>
           <FaLinkedin
-            color="#0a2a43"
-            size="50px"
+            color="#209a71"
+            size="45px"
             onClick={handleURL(
               "https://www.linkedin.com/in/sofia-montgomery-3175a821a"
             )}

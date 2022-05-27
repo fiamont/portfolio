@@ -1,5 +1,5 @@
 .Intro {
-  padding: 3rem;
+  padding: 6rem;
 }
 
 .TextImg {
@@ -8,6 +8,7 @@
 
 .Rubrik {
   text-transform: uppercase;
+  font-family: var(--default-font-family);
 }
 
 .P {
@@ -21,7 +22,10 @@
   color: rgb(78, 124, 193);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 460px) {
+  .Intro {
+    padding: 2rem;
+  }
   .TextImg {
     flex-direction: column;
     justify-content: center;

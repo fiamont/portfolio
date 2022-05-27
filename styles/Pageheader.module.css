@@ -18,4 +18,5 @@
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 28px;
+  font-family: var(--fontfamily-large-heading);
 }

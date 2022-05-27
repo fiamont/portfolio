@@ -11,7 +11,7 @@ function KontaktaMig() {
         <title>Sofias portfolio - Kontakta mig</title>
       </Head>
       <main className={styles.main}>
-        <PageHeader title={"Kontakta mig"} />
+        <PageHeader title={"Kontakt"} />
         <ContactForm />
       </main>
     </div>

@@ -1,16 +1,30 @@
 .Home {
   background: rgb(180, 230, 225);
-  background: linear-gradient(0deg, rgb(13, 51, 81) 0%, rgb(45, 253, 184) 100%);
-  height: 45vh;
+  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+    url("../public/sofiabackgrounddesktop.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-left: 2rem;
+  padding-top: 5rem;
 }
 
+.p {
+  color: #209a71;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
 .Text {
   text-transform: uppercase;
   text-align: center;
+  color: #209a71;
+  margin-top: 0;
+  font-family: var(--fontfamily-large-heading);
 }
 
 .Icons {
@@ -24,8 +38,19 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 560px) {
   .Home {
-    height: 55vh;
+    height: 60vh;
+    padding-left: 0;
+  }
+
+  .p,
+  .Icons,
+  .Text {
+    padding-left: 0.5rem;
+  }
+
+  .Text {
+    text-align: start;
   }
 }
