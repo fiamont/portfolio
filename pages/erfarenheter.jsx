@@ -1,6 +1,6 @@
 import React from "react";
 // import Experience from "./../components/Experience/Experience";
-// import PageHeader from "./../components/PageHeader/PageHeader";
+import PageHeader from "../components/Pageheader";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
@@ -11,8 +11,8 @@ function Erfarenheter() {
         <title>Sofias portfolio - Erfarenheter</title>
       </Head>
       <main className={styles.main}>
-        {/* <PageHeader title={"Erfarenheter"} />
-        <Experience /> */}
+        <PageHeader title={"Erfarenheter"} />
+        {/* <Experience /> */}
       </main>
     </div>
   );

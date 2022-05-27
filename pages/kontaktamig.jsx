@@ -1,5 +1,5 @@
 import React from "react";
-// import PageHeader from "./../components/PageHeader/PageHeader";
+import PageHeader from "../components/Pageheader";
 // import ContactForm from "./../components/ContactForm/ContactForm";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -11,8 +11,8 @@ function KontaktaMig() {
         <title>Sofias portfolio - Kontakta mig</title>
       </Head>
       <main className={styles.main}>
-        {/* <PageHeader title={"Kontakta mig"} />
-        <ContactForm /> */}
+        <PageHeader title={"Kontakta mig"} />
+        {/* <ContactForm /> */}
       </main>
     </div>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 // import Skills from "./../components/Skills/Skills";
-// import PageHeader from "./../components/PageHeader/PageHeader";
+import PageHeader from "../components/Pageheader";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
@@ -11,8 +11,8 @@ function Kompetenser() {
         <title>Sofias portfolio - Kompetenser</title>
       </Head>
       <main className={styles.main}>
-        {/* <PageHeader title={"Kompetenser"} />
-        <Skills /> */}
+        <PageHeader title={"Kompetenser"} />
+        {/* <Skills /> */}
       </main>
     </div>
   );
