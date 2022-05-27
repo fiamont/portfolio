@@ -14,7 +14,7 @@
 }
 
 .p {
-  color: #209a71;
+  color: rgb(22, 87, 127);
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -22,7 +22,7 @@
 .Text {
   text-transform: uppercase;
   text-align: center;
-  color: #209a71;
+  color: rgb(22, 87, 127);
   margin-top: 0;
   font-family: var(--fontfamily-large-heading);
 }
