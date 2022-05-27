@@ -33,11 +33,12 @@
 }
 
 .textarea {
-  height: 10rem;
+  height: 15rem;
 }
 
 @media screen and (min-width: 830px) {
-  .input {
+  .input,
+  .textarea {
     width: 620px;
   }
 }
