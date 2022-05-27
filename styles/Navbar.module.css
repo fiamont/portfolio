@@ -30,20 +30,42 @@
   display: none;
 }
 
-@media screen and (max-width: 430px) {
+.homeIconMobile {
+  cursor: pointer;
+}
+
+.homeIconDesktop {
+  display: none;
+}
+
+@media screen and (max-width: 460px) {
   .Navbarmenu {
     flex-direction: column;
-    padding: 0.5rem;
+    padding: 1rem;
     background: rgb(25, 142, 103);
+    position: absolute;
+    width: 100%;
+    top: 3.5rem;
+  }
+
+  .homeIconMobile {
+    display: none;
+  }
+
+  .homeIconDesktop {
+    display: block;
+    cursor: pointer;
   }
 
   .buttons {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     position: relative;
     padding: 0;
     padding-top: 1rem;
   }
+
   .hamburger {
     background: transparent;
     position: relative;
@@ -54,7 +76,8 @@
     height: 40px;
     border: none;
     cursor: pointer;
-    padding-bottom: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
   }
 
   .bar {

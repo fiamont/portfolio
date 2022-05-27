@@ -1,6 +1,7 @@
 import Link from "next/link";
 import style from "../styles/Navbar.module.css";
 import React, { useState, useEffect } from "react";
+import { FaHome } from "react-icons/fa";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -24,20 +25,26 @@ const Navbar = () => {
       window.removeEventListener("resize", changeWidth);
     };
   }, []);
+
   return (
     <div className={style.Navbar}>
       <div className={style.buttons}>
+        <div className={style.homeIconDesktop}>
+          <Link href="/" passHref>
+            <FaHome size="40px"></FaHome>
+          </Link>
+        </div>
         <button onClick={toggleNav} className={style.hamburger}>
           <span className={style.bar}></span>
           <span className={style.bar}></span>
           <span className={style.bar}></span>
         </button>
       </div>
-      {(toggleMenu || screenWidth > 430) && (
+      {(toggleMenu || screenWidth > 460) && (
         <ul onClick={toggleNav2} className={style.Navbarmenu}>
-          <li>
+          <li className={style.homeIconMobile}>
             <Link href="/" passHref>
-              <a className={style.Link}>HEM</a>
+              <FaHome size="30px"></FaHome>
             </Link>
           </li>
           <li>
