@@ -1,5 +1,5 @@
 import React from "react";
-// import Skills from "./../components/Skills/Skills";
+import Skills from "../components/Skills";
 import PageHeader from "../components/Pageheader";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -12,7 +12,7 @@ function Kompetenser() {
       </Head>
       <main className={styles.main}>
         <PageHeader title={"Kompetenser"} />
-        {/* <Skills /> */}
+        <Skills />
       </main>
     </div>
   );

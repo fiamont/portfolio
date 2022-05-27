@@ -1,0 +1,46 @@
+.Skills {
+  padding-bottom: 5%;
+}
+
+.Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.List ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.List {
+  flex-basis: 50%;
+  border-radius: 3px;
+  margin-bottom: 2px;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.List li {
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+  color: #a8409d;
+}
+
+.Text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    flex-direction: column;
+  }
+}
