@@ -40,7 +40,7 @@ const Navbar = () => {
           <span className={style.bar}></span>
         </button>
       </div>
-      {(toggleMenu || screenWidth > 460) && (
+      {(toggleMenu || screenWidth > 520) && (
         <ul onClick={toggleNav2} className={style.Navbarmenu}>
           <li className={style.homeIconMobile}>
             <Link href="/" passHref>

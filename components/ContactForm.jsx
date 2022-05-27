@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function ContactForm() {
   return (
-    <div>
+    <div className={style.contact}>
       <h2 className={style.rubrik}>
         Vill du komma i kontakt med mig? Kontakta mig på{" "}
         <Link
@@ -35,6 +35,7 @@ function ContactForm() {
           className={style.textarea}
           placeholder="Skriv ditt meddelande här..."
         />
+        <button className={style.button}>Skicka</button>
       </form>
     </div>
   );

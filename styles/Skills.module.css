@@ -14,10 +14,6 @@
 
 .List {
   padding: 0;
-  /* flex-basis: 50%;
-  border-radius: 3px;
-  margin-bottom: 2px;
-  padding-top: 0; */
 }
 
 .List ul {
@@ -41,8 +37,15 @@
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .Container {
-    gap: 2rem;
+    gap: 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .Container {
+    flex-direction: column;
+    gap: 0;
   }
 }

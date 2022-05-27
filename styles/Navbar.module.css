@@ -38,7 +38,7 @@
   display: none;
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 520px) {
   .Navbarmenu {
     flex-direction: column;
     padding: 1rem;
