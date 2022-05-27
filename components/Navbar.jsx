@@ -5,20 +5,13 @@ import React, { useState, useEffect } from "react";
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState();
-  const [showModal, setShowModal] = useState(false);
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu);
-    if (toggleMenu === true) {
-      setShowModal(false);
-    } else {
-      setShowModal(true);
-    }
   };
 
   const toggleNav2 = () => {
     setToggleMenu(!toggleMenu);
-    setShowModal(false);
   };
 
   useEffect(() => {

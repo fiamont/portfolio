@@ -4,10 +4,11 @@ import Image from "next/image";
 
 const listTitleStyle = {
   fontWeight: 900,
+  fontFamily: "var(--fontfamily-alternative)",
   marginBottom: "4px",
-  color: "#692862",
+  color: "#a8409d",
   listStyleType: "none",
-  fontSize: "23px",
+  fontSize: "22px",
 };
 
 const studies = (
