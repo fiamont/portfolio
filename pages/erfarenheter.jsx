@@ -1,5 +1,5 @@
 import React from "react";
-// import Experience from "./../components/Experience/Experience";
+import Experience from "../components/Experience";
 import PageHeader from "../components/Pageheader";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
@@ -12,7 +12,7 @@ function Erfarenheter() {
       </Head>
       <main className={styles.main}>
         <PageHeader title={"Erfarenheter"} />
-        {/* <Experience /> */}
+        <Experience />
       </main>
     </div>
   );

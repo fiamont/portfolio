@@ -1,0 +1,47 @@
+.ul {
+  padding: 4%;
+  color: rgb(178, 178, 178);
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Container {
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.List {
+  flex-basis: 50%;
+  border-radius: 3px;
+  margin-bottom: 2px;
+}
+
+.Photo {
+  display: flex;
+  justify-content: center;
+}
+
+.Girlcartoon {
+  width: 43%;
+  height: 43%;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 800px) {
+  .Container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+}

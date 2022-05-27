@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div className={style.Intro}>
       <h2 className={style.Rubrik}>
-        Jag heter Sofia Montgomery och jag studerar till javautvecklare på
+        Jag heter Sofia Montgomery och studerar till javautvecklare på
         Stockholms Tekniska Institut.
       </h2>
       <div className={style.TextImg}>
