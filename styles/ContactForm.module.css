@@ -47,8 +47,8 @@
 
 .button {
   width: 300px;
-  height: 2rem;
-  border-radius: 7px;
+  height: 2.6rem;
+  border-radius: 14px;
   border: none;
   font-family: var(--default-font-family);
   font-size: 20px;
