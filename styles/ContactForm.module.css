@@ -16,8 +16,8 @@
 
 .Link {
   text-decoration: none;
-  padding-right: 6px;
   color: rgb(78, 124, 193);
+  cursor: pointer;
 }
 
 .form {
