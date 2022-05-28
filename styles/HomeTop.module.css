@@ -14,7 +14,7 @@
 }
 
 .p {
-  color: rgb(22, 87, 127);
+  color: rgb(41, 133, 191);
   font-size: 20px;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
@@ -22,7 +22,7 @@
 .Text {
   text-transform: uppercase;
   text-align: center;
-  color: rgb(22, 87, 127);
+  color: rgb(41, 133, 191);
   margin-top: 0;
   font-family: var(--fontfamily-large-heading);
 }

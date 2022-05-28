@@ -24,14 +24,14 @@ function HomeTop() {
       <div className={style.Icons}>
         <Bouncy>
           <FaGithub
-            color="#16577f"
+            color="#2985bf"
             size="45px"
             onClick={handleURL("https://github.com/fiamont")}
           />
         </Bouncy>
         <Bouncy>
           <FaLinkedin
-            color="#16577f"
+            color="#2985bf"
             size="45px"
             onClick={handleURL(
               "https://www.linkedin.com/in/sofia-montgomery-3175a821a"
