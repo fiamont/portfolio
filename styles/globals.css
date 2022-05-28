@@ -9,9 +9,7 @@ body {
   font-family: var(--default-font-family), -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
-  /* background: linear-gradient(0deg, rgb(3, 3, 3) 0%, rgb(49, 59, 57) 100%); */
-  /* background: rgb(25, 142, 103); */
-  background: rgb(33, 33, 33);
+    background-color: rgb(25, 142, 103);
 }
 
 * {
@@ -38,16 +36,10 @@ h2 {
   font-family: var(--fontfamily-headings);
   font-weight: 700;
   font-size: 21px;
-  /* color: rgb(45, 45, 45); */
   color: rgb(178, 178, 178);
 }
 
 p {
   font-weight: 500;
-  /* color: rgb(45, 45, 45); */
   color: rgb(178, 178, 178);
-}
-
-hr {
-  border: 1px solid #044168;
 }

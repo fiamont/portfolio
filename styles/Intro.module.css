@@ -1,18 +1,11 @@
 .Intro {
-  position: relative;
-  height: 55vh;
-  background-color: rgb(25, 142, 103);
+  margin: 1rem;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
 }
 
 .IntroSquare {
-  position: absolute;
   padding: 3rem;
-  background-color: rgba(31, 31, 31, 0.941);
-  box-shadow: var(--default-boxshadow);
-  left: 0.7rem;
-  right: 0.7rem;
-  top: 0.7rem;
-  bottom: 0.7rem;
 }
 
 .Text {
@@ -35,20 +28,7 @@
   color: rgb(78, 124, 193);
 }
 
-@media screen and (max-width: 390px) {
-  .Intro {
-    height: 80vh;
-  }
-  .IntroSquare {
-    padding: 1rem;
-  }
-}
-
 @media screen and (max-width: 460px) {
-  .Intro {
-    height: 60vh;
-  }
-
   .IntroSquare {
     padding: 2rem;
   }
@@ -60,19 +40,5 @@
 
   .P {
     width: 100%;
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .Intro {
-    height: 55vh;
-  }
-
-  .IntroSquare {
-    padding: 3rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }

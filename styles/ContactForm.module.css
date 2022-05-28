@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 1rem;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
+  margin-top: 0;
 }
 
 .rubrik {

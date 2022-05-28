@@ -3,8 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 1rem;
+  padding: 0;
+  padding-bottom: 1rem;
+  margin-top: 2rem;
   text-transform: uppercase;
+  margin-bottom: 0;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
 }
 
 .h2 {

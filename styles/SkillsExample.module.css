@@ -1,8 +1,12 @@
 .container {
+  margin: 1rem;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin-top: 0;
 }
 .project {
   display: flex;

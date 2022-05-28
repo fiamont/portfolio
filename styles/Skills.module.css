@@ -1,5 +1,9 @@
 .Skills {
   padding-bottom: 5%;
+  margin: 1rem;
+  margin-top: 0;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
 }
 
 .Container {

@@ -1,5 +1,9 @@
 .AboutMe {
-  padding: 2rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-top: 0;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
 }
 
 .part1 {

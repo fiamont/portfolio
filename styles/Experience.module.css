@@ -1,3 +1,10 @@
+.Experience {
+  margin: 1rem;
+  margin-top: 0;
+  background-color: rgba(31, 31, 31, 0.941);
+  box-shadow: var(--default-boxshadow);
+}
+
 .ul {
   padding: 4%;
   color: rgb(178, 178, 178);
