@@ -1,11 +1,11 @@
 import React from "react";
 import style from "../styles/ContactForm.module.css";
-import Link from "next/link";
 
 function ContactForm() {
   const handleURL = (url) => {
     return () => window.open(url, "_blank");
   };
+
   return (
     <div className={style.contact}>
       <h2 className={style.rubrik}>
@@ -20,6 +20,9 @@ function ContactForm() {
         </a>{" "}
         eller via kontaktformuläret nedan:
       </h2>
+      <div className={style.OBS}>
+        <p className={style.OBSText}>OBS! Work in progress...</p>
+      </div>
       <form className={style.form}>
         <label className={style.label} htmlFor="Namn">
           Namn
@@ -47,6 +50,10 @@ function ContactForm() {
           name="meddelande"
           placeholder="Skriv ditt meddelande här..."
         />
+        <label className={style.checkboxText}>
+          <input className={style.checkbox} type="checkbox" />
+          Jag är ingen robot
+        </label>
         <button className={style.button}>Skicka</button>
       </form>
     </div>

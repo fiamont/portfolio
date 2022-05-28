@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 
 function Erfarenheter() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sofias portfolio - Erfarenheter</title>
       </Head>

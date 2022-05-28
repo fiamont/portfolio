@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 
 function KontaktaMig() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sofias portfolio - Kontakta mig</title>
       </Head>

@@ -7,7 +7,7 @@ import SkillsExample from "../components/SkillsExample";
 
 function Kompetenser() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sofias portfolio - Kompetenser</title>
       </Head>

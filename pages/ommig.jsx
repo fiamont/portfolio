@@ -6,7 +6,7 @@ import styles from "../styles/Home.module.css";
 
 function OmMig() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>Sofias portfolio - Om mig</title>
       </Head>
