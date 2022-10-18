@@ -1,5 +1,5 @@
 import style from "../styles/About.module.css";
-import Me from "../public/me.jpg";
+import Me from "../public/SofiaProfil.jpg";
 import Image from "next/image";
 
 const About = () => {
@@ -35,8 +35,8 @@ const About = () => {
             className={style.Me}
             src={Me}
             alt="me"
-            width={180}
-            height={228}
+            width={250}
+            height={261}
           />
         </div>
       </div>

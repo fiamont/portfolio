@@ -3,7 +3,6 @@ import style from "../styles/Footer.module.css";
 import {
   FaEnvelope,
   FaHome,
-  FaBirthdayCake,
   FaMobileAlt,
   FaGithub,
   FaLinkedin,
@@ -21,7 +20,6 @@ const Footer = () => {
     <div>
       <div className={style.ContactLinks} id="contactLinks">
         <div className={style.ContactLinksIcons}>
-          <FaBirthdayCake size="35px" onClick={() => textPopingUp("880703")} />
           <FaHome
             size="35px"
             onClick={() =>
