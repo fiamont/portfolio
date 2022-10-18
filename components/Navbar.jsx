@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div className={style.Navbar}>
       <div className={style.buttons}>
-        <div className={style.homeIconDesktop}>
+        <div className={style.homeIconMobile}>
           <Link href="/" passHref>
             <RiHomeHeartFill size="45px"></RiHomeHeartFill>
           </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
       </div>
       {(toggleMenu || screenWidth > 520) && (
         <ul onClick={toggleNav2} className={style.Navbarmenu}>
-          <li className={style.homeIconMobile}>
+          <li className={style.homeIconDesktop}>
             <Link href="/" passHref>
               <RiHomeHeartFill size="30px"></RiHomeHeartFill>
             </Link>

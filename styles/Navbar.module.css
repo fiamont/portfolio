@@ -30,11 +30,15 @@
   display: none;
 }
 
-.homeIconMobile {
+.homeIconDesktop {
   cursor: pointer;
 }
 
-.homeIconDesktop {
+.homeIconDesktop:hover {
+  color: antiquewhite;
+}
+
+.homeIconMobile {
   display: none;
 }
 
@@ -48,13 +52,17 @@
     top: 3.5rem;
   }
 
-  .homeIconMobile {
+  .homeIconDesktop {
     display: none;
   }
 
-  .homeIconDesktop {
+  .homeIconMobile {
     display: block;
     cursor: pointer;
+  }
+
+  .homeIconMobile:hover {
+    color: antiquewhite;
   }
 
   .buttons {
@@ -85,6 +93,10 @@
     width: 100%;
     background-color: black;
     border-radius: 13px;
+  }
+
+  .hamburger:hover {
+    background-color: rgba(250, 235, 215, 0.374);
   }
 
   .bar:visited {
