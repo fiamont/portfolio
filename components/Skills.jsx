@@ -24,6 +24,7 @@ const Skills = () => {
             <li key="agile">AGILE</li>
             <li key="react">REACT</li>
             <li key="tdd">TDD</li>
+            <li key="Spring">SPRING</li>
           </ul>
         </div>
         <Image
