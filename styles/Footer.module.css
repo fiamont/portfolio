@@ -29,3 +29,8 @@
   font-size: 10px;
   color: rgb(172, 171, 171);
 }
+
+.Modal {
+  background-color: rgb(206, 199, 199);
+  z-index: 1;
+}
