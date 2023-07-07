@@ -16,6 +16,7 @@ const Skills = () => {
             <li key="sql">SQL</li>
             <li key="html">HTML</li>
             <li key="css">CSS</li>
+            <li key="javaee">JAVA EE</li>
           </ul>
         </div>
         <div className={style.List}>
@@ -25,6 +26,7 @@ const Skills = () => {
             <li key="react">REACT</li>
             <li key="tdd">TDD</li>
             <li key="Spring">SPRING</li>
+            <li key="nextjs">NEXT.JS</li>
           </ul>
         </div>
         <Image

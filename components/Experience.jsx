@@ -16,17 +16,24 @@ const studies = (
       Studier
     </li>
     <li key="two">
-      2021-2023: Javautvecklare, yrkeshögskolan Stockholms Tekniska Institut.
+      VT2023: 11 veckors LIA (praktik) på KB, Kungliga Biblioteket, som
+      backendutvecklare.
     </li>
     <li key="three">
-      2014-2016: Kurser inom förskollärarprogrammet, Stockholms universitet.
+      HT2022: 10 veckors LIA (praktik) på SEB som backendutvecklare.
     </li>
     <li key="four">
+      2021-2023: Javautvecklare, yrkeshögskolan Stockholms Tekniska Institut.
+    </li>
+    <li key="five">
+      2014-2016: Kurser inom förskollärarprogrammet, Stockholms universitet.
+    </li>
+    <li key="six">
       2008-2011: Universitetsstudier vid Uppsala universitet och Sveriges
       Lantbruksuniversitet. Kurser i biologi, ekonomi, konstvetenskap, etnologi
       och geografi.
     </li>
-    <li key="five">
+    <li key="seven">
       2004-2007: Gymnasiet: Marinbiologi, Marina Läroverket, Stocksund.
     </li>
   </ul>
@@ -34,23 +41,23 @@ const studies = (
 
 const jobs = (
   <ul className={style.ul}>
-    <li key="six" style={listTitleStyle}>
+    <li key="eight" style={listTitleStyle}>
       Jobb
     </li>
-    <li key="seven">
+    <li key="nine">
       2016-10 - 2017-01: Projektanställning som administratör på Action DataTeam
       AB/serveOffice ab, Stockholm. Registrering av bokföringsordrar och
       kontroll av bl.a. moms på fakturor (leverantörsreskontran) hos en av
       arbetsgivarens kunder.
     </li>
-    <li key="eight">
+    <li key="ten">
       2013-2014: Praktik och vikariat på Flottiljens förskola, Täby, Stockholms
       län.
     </li>
-    <li key="nine">
+    <li key="eleven">
       2012: Receptionist på Stockholm International School, Stockholm.
     </li>
-    <li key="ten">
+    <li key="twelve">
       2007-2008: Butiksbiträde och köksassistent på Gamla Stans Fisk & Catering,
       Stockholm.
     </li>
@@ -59,17 +66,17 @@ const jobs = (
 
 const other = (
   <ul className={style.ul}>
-    <li key="eleven" style={listTitleStyle}>
+    <li key="thirteen" style={listTitleStyle}>
       Övrigt
     </li>
-    <li key="twelve">
+    <li key="forteen">
       Sommaren 2011: Fyra veckors kurs i Miljökunskap och segling i regi av
       Skeppsholmens folkhögskola och Naturskyddsföreningen. <br></br> En veckas
       studier vid Skeppsholmens folkhögskola om Östersjöns miljö och tre veckors
       segling på galeasen S/Y Shamrock då vi bl.a. deltog i
       Naturskyddsföreningens havskampanj.
     </li>
-    <li key="thirteen">
+    <li key="fifteen">
       Våren 2007: Elva veckors segling med skonaren S/Y Älva, i Karibien och
       sedan över Atlanten via Bermuda och Azorerna till Frankrike (ingick i min
       gymnasieutbildning). <br></br> Studier ombord, studiebesök iland,
