@@ -12,7 +12,7 @@ function SkillsExample() {
   return (
     <div className={style.container}>
       <div className={style.project}>
-        <h2 className={style.rubrik}>Examensarbetet "VHVH"</h2>
+        <h2 className={style.rubrik}>Examensarbetet VHVH</h2>
         <p className={style.text}>
           Examensarbetet i utbildningen till javautvecklare. Ett sammarbete
           mellan mig och en klasskamrat. Finns på
