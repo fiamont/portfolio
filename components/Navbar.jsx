@@ -11,6 +11,10 @@ const Navbar = () => {
     setToggleMenu(!toggleMenu);
   };
 
+  const closeMenu = () => {
+    setToggleMenu(false);
+  };
+
   useEffect(() => {
     const changeWidth = () => {
       setScreenWidth(window.innerWidth);
@@ -34,9 +38,14 @@ const Navbar = () => {
         setToggleMenu(false);
       }
     }
-    document.addEventListener("mousedown", handleClickOutsideMenu);
+
+    function handleClick(event) {
+      handleClickOutsideMenu(event);
+    }
+
+    document.addEventListener("mousedown", handleClick);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutsideMenu);
+      document.removeEventListener("mousedown", handleClick);
     };
   }, [toggleMenu]);
 
@@ -45,7 +54,7 @@ const Navbar = () => {
       <div className={style.buttons}>
         <div className={style.homeIconMobile}>
           <Link href="/" passHref>
-            <RiHomeHeartFill size="45px"></RiHomeHeartFill>
+            <RiHomeHeartFill size="45px" onClick={closeMenu} />
           </Link>
         </div>
         <button onClick={toggleNav} className={style.hamburger}>
@@ -58,27 +67,35 @@ const Navbar = () => {
         <ul className={style.Navbarmenu}>
           <li className={style.homeIconDesktop}>
             <Link href="/" passHref>
-              <RiHomeHeartFill size="30px"></RiHomeHeartFill>
+              <RiHomeHeartFill size="30px" onClick={closeMenu} />
             </Link>
           </li>
           <li>
             <Link className={style.Link} href="/ommig" passHref>
-              <a className={style.Link}>OM MIG</a>
+              <a className={style.Link} onClick={closeMenu}>
+                OM MIG
+              </a>
             </Link>
           </li>
           <li>
             <Link className={style.Link} href="/kompetenser" passHref>
-              <a className={style.Link}>KOMPETENSER</a>
+              <a className={style.Link} onClick={closeMenu}>
+                KOMPETENSER
+              </a>
             </Link>
           </li>
           <li>
             <Link className={style.Link} href="/erfarenheter" passHref>
-              <a className={style.Link}>ERFARENHETER</a>
+              <a className={style.Link} onClick={closeMenu}>
+                ERFARENHETER
+              </a>
             </Link>
           </li>
           <li>
             <Link className={style.Link} href="/kontaktamig" passHref>
-              <a className={style.Link}>KONTAKT</a>
+              <a className={style.Link} onClick={closeMenu}>
+                KONTAKT
+              </a>
             </Link>
           </li>
         </ul>
