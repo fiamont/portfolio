@@ -1,17 +1,13 @@
 import Link from "next/link";
 import style from "../styles/Navbar.module.css";
-import React, { useState, useEffect, useRef, forwardRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { RiHomeHeartFill } from "react-icons/ri";
 
-const Navbar = forwardRef((_, ref) => {
+const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState();
 
   const toggleNav = () => {
-    setToggleMenu(!toggleMenu);
-  };
-
-  const toggleNav2 = () => {
     setToggleMenu(!toggleMenu);
   };
 
@@ -45,7 +41,7 @@ const Navbar = forwardRef((_, ref) => {
   }, [toggleMenu]);
 
   return (
-    <div className={style.Navbar} ref={ref}>
+    <div className={style.Navbar} ref={navbarRef}>
       <div className={style.buttons}>
         <div className={style.homeIconMobile}>
           <Link href="/" passHref>
@@ -59,7 +55,7 @@ const Navbar = forwardRef((_, ref) => {
         </button>
       </div>
       {(toggleMenu || screenWidth > 520) && (
-        <ul onClick={toggleNav2} className={style.Navbarmenu}>
+        <ul className={style.Navbarmenu}>
           <li className={style.homeIconDesktop}>
             <Link href="/" passHref>
               <RiHomeHeartFill size="30px"></RiHomeHeartFill>
@@ -89,8 +85,6 @@ const Navbar = forwardRef((_, ref) => {
       )}
     </div>
   );
-});
-
-Navbar.displayName = "Navbar";
+};
 
 export default Navbar;
