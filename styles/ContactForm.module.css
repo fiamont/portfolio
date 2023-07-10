@@ -96,26 +96,20 @@
   font-family: var(--default-font-family);
   font-size: 20px;
   text-transform: uppercase;
-  /* font-weight: 500; */
   box-shadow: var(--default-boxshadow);
-  background-color: rgb(212, 212, 212);
-  color: gray;
-  font-weight: 300;
-
+  background-color: rgb(25, 142, 103);
+  color: white;
+  font-weight: 400;
 }
 
-/* .button:disabled {
+.error {
+  color: red;
+}
+
+.button:disabled {
   background-color: rgb(212, 212, 212);
   color: gray;
-  font-weight: 300;
 }
-*/
-
-/* 
-.button:valid {
-  background-color: rgb(22, 87, 127);
-  color: #fff;
-} */
 
 @media screen and (min-width: 600px) {
   .input,
