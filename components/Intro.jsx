@@ -6,7 +6,7 @@ const Intro = () => {
     <div className={style.Intro}>
       <div className={style.IntroSquare}>
         <h2 className={style.Rubrik}>
-          Välkommen till min portfolio! Jag är en nyexaminerad javautvecklare.
+          Välkommen till min portfolio! Jag är nyexaminerad javautvecklare.
         </h2>
         <div className={style.Text}>
           <p className={style.P}>

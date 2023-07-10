@@ -18,6 +18,7 @@
   margin-bottom: 0;
   text-transform: uppercase;
   font-size: 28px;
-  font-family: var(--fontfamily-large-heading);
+  font-weight: 900;
+  /* font-family: var(--fontfamily-large-heading); */
   color: rgb(41, 133, 191);
 }

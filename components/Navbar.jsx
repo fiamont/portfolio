@@ -1,9 +1,9 @@
 import Link from "next/link";
 import style from "../styles/Navbar.module.css";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef, forwardRef } from "react";
 import { RiHomeHeartFill } from "react-icons/ri";
 
-const Navbar = () => {
+const Navbar = forwardRef((_, ref) => {
   const [toggleMenu, setToggleMenu] = useState(false);
   const [screenWidth, setScreenWidth] = useState();
 
@@ -26,8 +26,26 @@ const Navbar = () => {
     };
   }, []);
 
+  const navbarRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutsideMenu(event) {
+      if (
+        navbarRef.current &&
+        !navbarRef.current.contains(event.target) &&
+        toggleMenu
+      ) {
+        setToggleMenu(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutsideMenu);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutsideMenu);
+    };
+  }, [toggleMenu]);
+
   return (
-    <div className={style.Navbar}>
+    <div className={style.Navbar} ref={ref}>
       <div className={style.buttons}>
         <div className={style.homeIconMobile}>
           <Link href="/" passHref>
@@ -71,6 +89,6 @@ const Navbar = () => {
       )}
     </div>
   );
-};
+});
 
 export default Navbar;
