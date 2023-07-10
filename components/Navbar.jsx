@@ -91,4 +91,6 @@ const Navbar = forwardRef((_, ref) => {
   );
 });
 
+Navbar.displayName = "Navbar";
+
 export default Navbar;
