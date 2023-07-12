@@ -13,7 +13,10 @@
   gap: 9rem;
   flex-wrap: wrap;
   padding: 1rem;
-  padding-bottom: 0;
+  padding-bottom: 15px;
+  border: 1px rgb(82, 82, 82) solid;
+  border-radius: 10px;
+  margin: 12px;
 }
 
 .List {
@@ -21,15 +24,22 @@
 }
 
 .List ul {
-  list-style-type: none;
   padding: 0;
 }
 
 .List li {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: 23px;
   color: #209a71;
+}
+
+.List li::before {
+  content: "•";
+  color: #209a71;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
 }
 
 .Text {

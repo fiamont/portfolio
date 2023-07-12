@@ -14,8 +14,22 @@ function SkillsExample() {
       <div className={style.project}>
         <h2 className={style.rubrik}>Examensarbetet VHVH</h2>
         <p className={style.text}>
-          Examensarbetet i utbildningen till javautvecklare. Ett sammarbete
-          mellan mig och en klasskamrat. Finns på
+          Webbapplikationen ”VHVH – Vad har vi hemma?” skrev jag ihop med
+          Therese Lindquist i min klass. Projektet är skrivet i Java och
+          JavaScript. Vi använde Spring Boot, Spring Security, PostgreSQL, React
+          och Next.js. Under arbetet följde vi en agil arbetsmetod med hjälp av
+          Jira. Verktyg som GitHub, Postman, ChatGPT samt Discord och Microsoft
+          Teams för kommunikation och samarbete användes också. Projektet
+          genomgick tre faser: planering, början till implementering och
+          avslutande fas då större delen av programmeringen utfördes. Arbetet
+          bestod av både parprogrammering och enskilt arbete.
+        </p>
+        <p className={style.text}>
+          Resultatet blev en grundläggande webbapplikation med grundläggande
+          funktionalitet och design för användaren. Användaren kan i sina listor
+          se och lägga till platser, områden och artiklar men även se och ändra
+          på sina användaruppgifter. Administratörer kan se listor över alla
+          användare. (OBS endast frontend är deployad än så länge) Finns på
           <p
             className={style.extLink}
             onClick={handleURL("https://github.com/fiamont/vhvh")}
@@ -42,10 +56,14 @@ function SkillsExample() {
         </div>
       </div>
       <div className={style.project}>
-        <h2 className={style.rubrik}>Ett Next.js projekt</h2>
+        <h2 className={style.rubrik}>Projektet Unify</h2>
         <p className={style.text}>
-          Ett webapplikationsprojekt som kallas för Unify. Ett sammarbete mellan
-          fyra ux-designer-studenter och fyra javautvecklar-studenter. Finns på
+          Ett webapplikationsprojekt som kallas för Unify. Det utvecklades i
+          samband med kurserna "JavaScript & Ramverk" och "Agil projektmetodik"
+          och var ett sammarbete mellan fyra ux-designer-studenter och fyra
+          javautvecklar-studenter. Skrevs i Javascript med biblioteket React och
+          ramverket Next.js. För design och planering m.m. användes verkyget
+          Figma. Finns på
           <p
             className={style.extLink}
             onClick={handleURL("https://github.com/fiamont/unify")}
@@ -66,9 +84,9 @@ function SkillsExample() {
         </div>
       </div>
       <div className={style.project}>
-        <h2 className={style.rubrik}>Ett vanilla javascript memoryspel</h2>
+        <h2 className={style.rubrik}>Ett memoryspel</h2>
         <p className={style.text}>
-          Min första webapplikation. Finns på
+          Min första webapplikation, skriven i enbart JavaScript. Finns på
           <p
             className={style.extLink}
             onClick={handleURL("https://github.com/fiamont/sti-frontend.git")}

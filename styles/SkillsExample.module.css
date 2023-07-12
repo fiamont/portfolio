@@ -13,6 +13,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px rgb(82, 82, 82) solid;
+  border-radius: 10px;
+  margin: 12px;
+  padding-bottom: 15px;
 }
 
 .rubrik,
@@ -21,12 +25,23 @@
   margin: 0;
 }
 
+.rubrik {
+  color: rgb(142, 184, 210);
+  /* text-decoration-line: underline;
+  text-decoration-color: white; */
+}
+
 .text {
   padding-top: 0;
 }
 
 .extLink {
   cursor: pointer;
+}
+
+.extLink:hover {
+  text-decoration: underline;
+  color: blue;
 }
 
 .Unify,

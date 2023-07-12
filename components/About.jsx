@@ -21,33 +21,40 @@ const About = () => {
         <div className={style.textpart2}>
           <p>
             Nyfikenheten på programmering har funnits länge, men jag har
-            tidigare fokuserat på mitt stora intresse för djur och natur.
-            Eftersom jag är allergisk mot både djur och växter har det inte
-            varit enkelt att hitta ett sätt att jobba med det. Därför har jag nu
-            valt att inrikta mig på programmering, vilket känns väldigt
-            spännande.
+            tidigare fokuserat på mitt stora intresse för djur och natur. Efter
+            några år av försök att göra något vettigt av det intresset har jag
+            nu valt att göra verklighet av programmerings-nyfikenheten. För mig
+            är det helt rätt och det känns väldigt spännande.
           </p>
           <p>
-            Jag valde att studera till javautvecklare på yrkeshögskolan
-            Stockholms Tekniska Institut och blev färdig våren 2023.
-            Huvudinriktningen på programmet var Java-programmering, men vi har
-            också fått grundläggande kunskaper i Spring, Java EE, JavaScript,
-            React, Next.js, SQL, HTML, CSS och Git. Vi har även gått en kurs i
-            agil projektmetodik där vi samarbetade med utbildningen till
-            UX-designer. Under utbildningen hade vi även två perioder med
-            praktik (LIA - lärande i arbete). Jag gjorde min praktik på SEB och
-            KB (Kungliga biblioteket) och min huvudsakliga yrkesroll var då som
-            backendutvecklare på båda platserna.
+            Jag har studerat till javautvecklare på yrkeshögskolan Stockholms
+            Tekniska Institut och blev färdig våren 2023. Huvudinriktningen på
+            programmet var Java-programmering, men vi fick också grundläggande
+            kunskaper i Spring, Java EE, JavaScript, React, Next.js, SQL, HTML,
+            CSS och Git. Vi gick även en kurs i agil projektmetodik där vi
+            samarbetade med utbildningen till UX-designer. Under utbildningen
+            hade vi även två perioder med praktik (LIA - lärande i arbete). Jag
+            gjorde min praktik på SEB och KB (Kungliga biblioteket) och min
+            huvudsakliga yrkesroll var då som backendutvecklare på båda
+            platserna.
           </p>
           <p>
-            Mig själv skulle jag beskriva som en glad, lugn, noggrann och
+            Jag skulle beskriva mig själv som en glad, lugn, noggrann och
             praktisk person; jag är en lyssnare som pratar när jag har något att
-            säga. Jag är kreativ och gillar att strukturera upp saker och hålla
-            ordning, och att lösa problem.
+            säga. Jag är kreativ och tycker om problemlösning, samtidigt som jag
+            gillar att strukturera upp saker och hålla ordning.
+          </p>
+          <p>
+            Det jag tycker är roligt med programmering är att det är utmanande.
+            Jag tycker om att studera och lära mig nytt vilket är en annan
+            fördel med programmering och att vara utvecklare – det finns alltid
+            mer att lära sig. Jag tycker också om att man både kan jobba i team
+            och att man kan jobba enskilt.
           </p>
           <h2 className={style.heading2}>
-            Drömjobbet vore att kunna kombinera mina programmeringskunskaper med
-            mitt engagemang för djur, natur, miljö och klimat.
+            Jag tycker att hela utvecklingsprocessen är intressant, därför vill
+            jag gärna jobba som fullstackutvecklare, men också som
+            backendutvecklare eftersom jag har mest erfarenheter med det.
           </h2>
         </div>
       </div>
