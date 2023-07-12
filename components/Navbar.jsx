@@ -92,9 +92,9 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link className={style.Link} href="/kontaktamig" passHref>
+            <Link className={style.Link} href="/projekt" passHref>
               <a className={style.Link} onClick={closeMenu}>
-                KONTAKT
+                PROJEKT
               </a>
             </Link>
           </li>

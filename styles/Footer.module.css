@@ -34,3 +34,7 @@
   background-color: rgb(206, 199, 199);
   z-index: 1;
 }
+
+.dialogtitle {
+  color: rgb(66, 66, 66);
+}

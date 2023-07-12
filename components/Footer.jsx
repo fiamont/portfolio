@@ -41,7 +41,12 @@ const Footer = () => {
               aria-labelledby="alert-dialog-title"
               aria-describedby="alert-dialog-description"
             >
-              <DialogTitle id="alert-dialog-title">{"Adress:"}</DialogTitle>
+              <DialogTitle
+                className={style.dialogtitle}
+                id="alert-dialog-title"
+              >
+                {"Adress:"}
+              </DialogTitle>
               <IconButton
                 aria-label="close"
                 onClick={handleClose}
@@ -69,7 +74,12 @@ const Footer = () => {
               aria-labelledby="alert-dialog-title"
               aria-describedby="alert-dialog-description"
             >
-              <DialogTitle id="alert-dialog-title">{"Mail:"}</DialogTitle>
+              <DialogTitle
+                className={style.dialogtitle}
+                id="alert-dialog-title"
+              >
+                {"Mail:"}
+              </DialogTitle>
               <IconButton
                 aria-label="close"
                 onClick={handleClose}
@@ -97,7 +107,12 @@ const Footer = () => {
               aria-labelledby="alert-dialog-title"
               aria-describedby="alert-dialog-description"
             >
-              <DialogTitle id="alert-dialog-title">{"Mobil:"}</DialogTitle>
+              <DialogTitle
+                className={style.dialogtitle}
+                id="alert-dialog-title"
+              >
+                {"Mobil:"}
+              </DialogTitle>
               <IconButton
                 aria-label="close"
                 onClick={handleClose}

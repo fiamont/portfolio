@@ -2,6 +2,10 @@ import style from "../styles/Intro.module.css";
 import Link from "next/link";
 
 const Intro = () => {
+  const handleURL = (url) => {
+    return () => window.open(url, "_blank");
+  };
+
   return (
     <div className={style.Intro}>
       <div className={style.IntroSquare}>
@@ -16,7 +20,16 @@ const Intro = () => {
             <Link href="/ommig" passHref>
               <a className={style.Link}>här</a>
             </Link>
-            .
+            . Vill du komma i kontakt med mig? Kontakta mig på{" "}
+            <a
+              className={style.LinkedIn}
+              onClick={handleURL(
+                "https://www.linkedin.com/in/sofia-montgomery-3175a821a"
+              )}
+            >
+              LinkedIn
+            </a>{" "}
+            eller skriv till min mail (se kuvertet nedan).
           </p>
         </div>
       </div>
