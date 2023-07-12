@@ -22,9 +22,9 @@ const About = () => {
           <p>
             Nyfikenheten på programmering har funnits länge, men jag har
             tidigare fokuserat på mitt stora intresse för djur och natur. Efter
-            några år av försök att göra något vettigt av det intresset har jag
-            nu valt att göra verklighet av programmerings-nyfikenheten. För mig
-            är det helt rätt och det känns väldigt spännande.
+            några år av försök att göra något yrkesmässigt av det intresset har
+            jag nu valt att göra verklighet av programmerings-nyfikenheten. För
+            mig är det helt rätt och det känns väldigt spännande.
           </p>
           <p>
             Jag har studerat till javautvecklare på yrkeshögskolan Stockholms
@@ -48,13 +48,13 @@ const About = () => {
             Det jag tycker är roligt med programmering är att det är utmanande.
             Jag tycker om att studera och lära mig nytt vilket är en annan
             fördel med programmering och att vara utvecklare – det finns alltid
-            mer att lära sig. Jag tycker också om att man både kan jobba i team
-            och att man kan jobba enskilt.
+            mer att lära sig. Det passar mig också bra att man både kan jobba i
+            team och jobba enskilt.
           </p>
           <h2 className={style.heading2}>
-            Jag tycker att hela utvecklingsprocessen är intressant, därför vill
+            Jag tycker att hela utvecklingsprocessen är intressant. Därför vill
             jag gärna jobba som fullstackutvecklare, men också som
-            backendutvecklare eftersom jag har mest erfarenheter med det.
+            backendutvecklare eftersom jag har mest erfarenhet av det.
           </h2>
         </div>
       </div>
