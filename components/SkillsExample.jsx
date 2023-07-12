@@ -14,8 +14,8 @@ function SkillsExample() {
       <div className={style.project}>
         <h2 className={style.rubrik}>Examensarbetet VHVH</h2>
         <p className={style.text}>
-          Webbapplikationen ”VHVH – Vad har vi hemma?” skrev jag ihop med
-          Therese Lindquist i min klass. Projektet är skrivet i Java och
+          Webbapplikationen &quot;VHVH – Vad har vi hemma?&quot; skrev jag ihop
+          med Therese Lindquist i min klass. Projektet är skrivet i Java och
           JavaScript. Vi använde Spring Boot, Spring Security, PostgreSQL, React
           och Next.js. Under arbetet följde vi en agil arbetsmetod med hjälp av
           Jira. Verktyg som GitHub, Postman, ChatGPT samt Discord och Microsoft
@@ -59,11 +59,11 @@ function SkillsExample() {
         <h2 className={style.rubrik}>Projektet Unify</h2>
         <p className={style.text}>
           Ett webapplikationsprojekt som kallas för Unify. Det utvecklades i
-          samband med kurserna "JavaScript & Ramverk" och "Agil projektmetodik"
-          och var ett sammarbete mellan fyra ux-designer-studenter och fyra
-          javautvecklar-studenter. Skrevs i Javascript med biblioteket React och
-          ramverket Next.js. För design och planering m.m. användes verkyget
-          Figma. Finns på
+          samband med kurserna &quot;JavaScript & Ramverk&quot; och &quot;Agil
+          projektmetodik&quot; och var ett sammarbete mellan fyra
+          ux-designer-studenter och fyra javautvecklar-studenter. Skrevs i
+          Javascript med biblioteket React och ramverket Next.js. För design och
+          planering m.m. användes verkyget Figma. Finns på
           <p
             className={style.extLink}
             onClick={handleURL("https://github.com/fiamont/unify")}
@@ -86,7 +86,8 @@ function SkillsExample() {
       <div className={style.project}>
         <h2 className={style.rubrik}>Ett memoryspel</h2>
         <p className={style.text}>
-          Min första webapplikation, skriven i enbart JavaScript. Finns på
+          Min första webapplikation, skriven i enbart JavaScript. Gjordes i
+          första JavaScript-kursen. Finns på
           <p
             className={style.extLink}
             onClick={handleURL("https://github.com/fiamont/sti-frontend.git")}
