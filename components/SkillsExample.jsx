@@ -4,6 +4,7 @@ import Image from "next/image";
 import AwesomeMemory from "../public/awesomeMemoryBilden.jpg";
 import Unify from "../public/unifyBild.jpg";
 import VHVH from "../public/examensprojekt.png";
+import Notepad from "../public/notepadbild.png";
 
 function SkillsExample() {
   const handleURL = (url) => {
@@ -80,6 +81,32 @@ function SkillsExample() {
             width={210}
             height={161}
             onClick={handleURL("https://unify-sti.vercel.app/")}
+          />
+        </div>
+      </div>
+      <div className={style.project}>
+        <h2 className={style.rubrik}>Ett anteckningsprogram</h2>
+        <p className={style.text}>
+          Ett desktopprogram skrivet i Java med GUI-biblioteket Swing. Finns på
+          <p
+            className={style.extLink}
+            onClick={handleURL("https://github.com/fiamont/sti-frontend.git")}
+          >
+            https://github.com/fiamont/Sofias_Notepad
+          </p>
+          För att testa programmet kan man ladda ner en executable jar fil från
+          github nedan (klicka på "download raw file"):
+        </p>
+        <div className={style.LinkMemory}>
+          <Image
+            className={style.Memory}
+            src={Notepad}
+            alt="Memory"
+            width={210}
+            height={127}
+            onClick={handleURL(
+              "https://github.com/fiamont/Sofias_Notepad/blob/master/out/artifacts/Sofias_Notepad_jar/Sofias_Notepad.jar"
+            )}
           />
         </div>
       </div>
