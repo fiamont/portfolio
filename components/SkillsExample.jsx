@@ -95,7 +95,7 @@ function SkillsExample() {
             https://github.com/fiamont/Sofias_Notepad
           </p>
           För att testa programmet kan man ladda ner en executable jar fil från
-          github nedan (klicka på "download raw file"):
+          github nedan (klicka på &quot;download raw file&quot;):
         </p>
         <div className={style.LinkMemory}>
           <Image
