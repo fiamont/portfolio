@@ -1,10 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import style from "../styles/ContactForm.module.css";
+import {
+  FormControl,
+  Input,
+  FormLabel,
+  Textarea,
+  FormErrorMessage,
+  Container,
+  Button,
+} from "@chakra-ui/react";
+import { sendContactForm } from "../lib/api";
+
+const initValues = { name: "", email: "", message: "" };
+
+const initState = { values: initValues };
 
 function ContactForm() {
   const handleURL = (url) => {
     return () => window.open(url, "_blank");
   };
+  const [state, setState] = useState(initState);
+  const [touched, setTouched] = useState({});
+
+  const { values, isLoading } = state;
+
+  const onBlur = ({ target }) =>
+    setTouched((prev) => ({ ...prev, [target.name]: true }));
+
+  const handleChange = ({ target }) =>
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+
+  const onSubmit = async () => {
+    setState((prev) => ({
+      ...prev,
+      isLoading: true,
+    }));
+    await sendContactForm(values);
+  };
+
+  //TODO - error-färger funkar inte (border och felmeddelande), disabled-knappen funkar inte heller
 
   return (
     <div className={style.contact}>
@@ -20,42 +60,79 @@ function ContactForm() {
         </a>{" "}
         eller via kontaktformuläret nedan:
       </h2>
-      <div className={style.OBS}>
-        <p className={style.OBSText}>OBS! Work in progress...</p>
-      </div>
-      <form className={style.form}>
-        <label className={style.label} htmlFor="Namn">
-          Namn
-        </label>
-        <input
-          className={style.input}
-          type="text"
-          name="namn"
-          placeholder="Namn Namnsson"
-        />
-        <label className={style.label} htmlFor="Email">
-          Email
-        </label>
-        <input
-          className={style.input}
-          type="text"
-          placeholder="mail@hej.se"
-          name="email"
-        />
-        <label className={style.label} htmlFor="Meddelande">
-          Meddelande
-        </label>
-        <textarea
-          className={style.textarea}
-          name="meddelande"
-          placeholder="Skriv ditt meddelande här..."
-        />
-        <label className={style.checkboxText}>
-          <input className={style.checkbox} type="checkbox" />
-          Jag är ingen robot
-        </label>
-        <button className={style.button}>Skicka</button>
-      </form>
+
+      <Container className={style.form}>
+        <FormControl isRequired isInvalid={touched.name && !values.name}>
+          <FormLabel className={style.label}>Namn</FormLabel>
+          <Input
+            className={style.input}
+            type="text"
+            name="name"
+            errorBorderColor="red.300"
+            placeholder="Namn Namnsson"
+            value={values.name}
+            onChange={handleChange}
+            onBlur={onBlur}
+          />
+          <FormErrorMessage className={style.error}>
+            Du måste fylla i det här fältet
+          </FormErrorMessage>
+        </FormControl>
+
+        <FormControl isRequired isInvalid={touched.email && !values.email}>
+          <FormLabel className={style.label}>Email</FormLabel>
+          <Input
+            className={style.input}
+            type="text"
+            placeholder="mail@hej.se"
+            name="email"
+            value={values.email}
+            onChange={handleChange}
+            errorBorderColor="red.300"
+            onBlur={onBlur}
+          />
+          <FormErrorMessage className={style.error}>
+            Du måste fylla i det här fältet
+          </FormErrorMessage>
+        </FormControl>
+
+        <FormControl isRequired isInvalid={touched.message && !values.message}>
+          <FormLabel className={style.label} htmlFor="Meddelande">
+            Meddelande
+          </FormLabel>
+          <Textarea
+            className={style.textarea}
+            name="message"
+            rows={8}
+            placeholder="Skriv ditt meddelande här..."
+            value={values.message}
+            onChange={handleChange}
+            errorBorderColor="red.300"
+            onBlur={onBlur}
+          />
+          <FormErrorMessage className={style.error}>
+            Du måste fylla i det här fältet
+          </FormErrorMessage>
+        </FormControl>
+
+        <FormControl isRequired>
+          <FormLabel className={style.checkboxText}>
+            <Input className={style.checkbox} type="checkbox" name="checkbox" />
+            Jag är ingen robot
+          </FormLabel>
+        </FormControl>
+
+        <FormControl>
+          <Button
+            className={style.button}
+            disabled={!values.name || !values.email || !values.message}
+            isLoading={isLoading}
+            onClick={onSubmit}
+          >
+            Skicka
+          </Button>
+        </FormControl>
+      </Container>
     </div>
   );
 }
